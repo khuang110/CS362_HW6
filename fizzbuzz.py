@@ -3,3 +3,5 @@
 def fizz_buzz(n):
     if n < 1 or n > 100:
         return None
+    else:
+        print(n)
