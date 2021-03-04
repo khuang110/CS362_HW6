@@ -3,5 +3,7 @@
 def fizz_buzz(n):
     if n < 1 or n > 100:
         return None
+    elif n % 3 == 0:
+        print("Fizz")
     else:
         print(n)
