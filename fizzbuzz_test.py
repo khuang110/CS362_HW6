@@ -27,4 +27,4 @@ class TestCase(unittest.TestCase):
         sys.stdout = out
         fizz_buzz(6)
         sys.stdout = sys.__stdout__
-        self.assertEqual(out.getvalue(), "6\n")
+        self.assertEqual(out.getvalue(), "Fizz\n")  # Fizz expected output
