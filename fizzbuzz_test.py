@@ -28,3 +28,14 @@ class TestCase(unittest.TestCase):
         fizz_buzz(6)
         sys.stdout = sys.__stdout__
         self.assertEqual(out.getvalue(), "Fizz\n")  # Fizz expected output
+
+    # Test case for a good number
+    # Test for a multiple of 3 and 5
+    def test_fizz4(self):
+        # Redirect stdout and capture output
+        out = io.StringIO()
+        sys.stdout = out
+        fizz_buzz(15)
+        sys.stdout = sys.__stdout__
+        self.assertEqual(out.getvalue(), "FizzBuzz\n") # FizzBuzz expected output
+
