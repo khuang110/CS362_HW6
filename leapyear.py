@@ -7,3 +7,5 @@ def leap_year(n):
             print(n, "is not a leap year")
         else:
             print(n, "is a leap year")
+    else:
+        print(n, "is not a leap year")
