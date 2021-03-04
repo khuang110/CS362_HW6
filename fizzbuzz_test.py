@@ -18,3 +18,13 @@ class TestCase(unittest.TestCase):
         fizz_buzz(1)
         sys.stdout = sys.__stdout__
         self.assertEqual(out.getvalue(), "1\n")
+
+    # Test case for a good number
+    # Test for a multiple of 3
+    def test_fizz3(self):
+        # Redirect stdout and capture output
+        out = io.StringIO()
+        sys.stdout = out
+        fizz_buzz(6)
+        sys.stdout = sys.__stdout__
+        self.assertEqual(out.getvalue(), "6\n")
